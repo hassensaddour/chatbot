@@ -1,0 +1,224 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+
+- intent: ask_phishing_1
+  examples: |
+    - How can I recognize a phishing email?
+    - What are common signs of a phishing email?
+- intent: ask_phishing_2
+  examples: |
+    - What should I do if I suspect an email is a phishing attempt?
+    - What should I do if I receive a suspicious email?
+- intent: ask_phishing_3
+  examples: |
+    - How can I report phishing emails?
+    - Where can I report phishing attempts?
+
+- intent: ask_data_theft_1
+  examples: |
+    - How can I protect my personal data from theft?
+    - How can I secure my personal data from being stolen?
+- intent: ask_data_theft_2
+  examples: |
+    - What should I do if my data has been stolen?
+    - What actions should I take if my personal information is stolen?
+- intent: ask_data_theft_3
+  examples: |
+    - What are the best practices for securing sensitive information?
+    - How can I ensure my sensitive information is protected?
+    
+
+- intent: ask_device_security_1
+  examples: |
+    - How can I secure my mobile device against cyber threats?
+    - What steps can I take to protect my mobile device from hackers?
+- intent: ask_device_security_2
+  examples: |
+    - What are the best security settings for my telecom devices?
+    - What security settings are recommended for telecom devices?
+- intent: ask_device_security_3
+  examples: |
+    - How can I update my device’s security settings?
+    - How do I change the security settings on my device?
+    
+
+- intent: ask_network_security_1
+  examples: |
+    - How can I secure my home Wi-Fi network?
+    - What should I do to secure my home network?
+- intent: ask_network_security_2
+  examples: |
+    - What are the signs of a compromised network?
+    - How can I tell if my network has been compromised?
+- intent: ask_network_security_3
+  examples: |
+    - How can I prevent unauthorized access to my network?
+    - What measures can I take to block unauthorized access to my network?
+
+- intent: ask_ransomware_1
+  examples: |
+    - How can I protect my data from ransomware attacks?
+    - What precautions should I take to avoid ransomware attacks?
+- intent: ask_ransomware_2
+  examples: |
+    - What should I do if my device is infected with ransomware?
+    - How should I respond to a ransomware infection?
+- intent: ask_ransomware_3
+  examples: |
+    - How can I backup my data to prevent ransomware loss?
+    - What are the best ways to back up data to prevent ransomware damage?
+
+- intent: ask_mitm_attacks_1
+  examples: |
+    - How can I detect if I am a victim of a MitM attack?
+    - What are the indicators of a potential MitM attack?
+- intent: ask_mitm_attacks_2
+  examples: |
+    - What are the steps to prevent MitM attacks?
+    - How can I protect myself from Man-in-the-Middle attacks?
+- intent: ask_mitm_attacks_3
+  examples: |
+    - How can I secure my communications against MitM attacks?
+    - What can I do to secure my communications from MitM attacks?
+
+- intent: ask_iot_security_1
+  examples: |
+    - How can I secure my IoT devices from cyber threats?
+    - How can I make sure my IoT devices are safe from cyber threats?
+- intent: ask_iot_security_2
+  examples: |
+    - What are the best practices for IoT device security?
+    - What are some effective strategies for securing IoT devices?
+- intent: ask_iot_security_3
+  examples: |
+    - How can I monitor and manage the security of my IoT devices?
+    - How can I oversee and manage my IoT device security?
+
+- intent: ask_espionage_eavesdropping_1
+  examples: |
+    - How can I protect my communications from eavesdropping?
+    - How can I keep my conversations safe from eavesdropping?
+- intent: ask_espionage_eavesdropping_2
+  examples: |
+    - What steps can I take to prevent industrial espionage?
+    - What are some steps to guard against industrial espionage?
+- intent: ask_espionage_eavesdropping_3
+  examples: |
+    - How can I secure sensitive information during transmission?
+    - How can I protect sensitive data during its transmission?
+
+- intent: ask_ddos_attacks_1
+  examples: |
+    - How can I protect my network from DDoS attacks?
+    - How can I defend my network against DDoS attacks?
+- intent: ask_ddos_attacks_2
+  examples: |
+    - What should I do if I am experiencing a DDoS attack?
+    - What should I do if I notice a DDoS attack on my network?
+- intent: ask_ddos_attacks_3
+  examples: |
+    - What are the best practices for mitigating DDoS threats?
+    - How can I minimize the risk of DDoS threats?
+
+- intent: ask_compliance_1
+  examples: |
+    - What are the current regulations regarding telecom security?
+    - What telecom security regulations should I be aware of?
+- intent: ask_compliance_2
+  examples: |
+    - How can I ensure my practices comply with GDPR?
+    - How can I make sure my practices are GDPR-compliant?
+- intent: ask_compliance_3
+  examples: |
+    - What are the penalties for non-compliance with telecom security regulations?
+    - What are the consequences of violating telecom security regulations?

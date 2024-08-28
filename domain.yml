@@ -1,0 +1,158 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - ask_phishing_1
+  - ask_phishing_2
+  - ask_phishing_3
+  - ask_data_theft_1
+  - ask_data_theft_2
+  - ask_data_theft_3
+  - ask_device_security_1
+  - ask_device_security_2
+  - ask_device_security_3
+  - ask_network_security_1
+  - ask_network_security_2
+  - ask_network_security_3
+  - ask_ransomware_1
+  - ask_ransomware_2
+  - ask_ransomware_3
+  - ask_mitm_attacks_1
+  - ask_mitm_attacks_2
+  - ask_mitm_attacks_3
+  - ask_iot_security_1
+  - ask_iot_security_2
+  - ask_iot_security_3
+  - ask_espionage_eavesdropping_1
+  - ask_espionage_eavesdropping_2
+  - ask_espionage_eavesdropping_3
+  - ask_ddos_attacks_1
+  - ask_ddos_attacks_2
+  - ask_ddos_attacks_3
+  - ask_compliance_1
+  - ask_compliance_2
+  - ask_compliance_3
+
+
+
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_phishing_recognition:
+    - text: "Phishing emails often have signs such as poor grammar, urgent or threatening language, requests for personal information, unfamiliar sender addresses, and suspicious links or attachments."
+
+  utter_phishing_suspicion:
+    - text: "Do not click on any links or download attachments. Report the email to your IT department or email provider and delete it from your inbox."
+
+  utter_phishing_report:
+    - text: "Most email providers have a 'Report Phishing' option. You can also forward the email to a phishing reporting service, such as phishing-report@us-cert.gov."
+
+  utter_data_theft_protection:
+    - text: "Use strong, unique passwords for different accounts, enable two-factor authentication, regularly update software, and be cautious about sharing personal information online."
+
+  utter_data_theft_response:
+    - text: "Immediately change your passwords, notify your bank and other relevant institutions, monitor your accounts for suspicious activity, and consider placing a fraud alert on your credit report."
+
+  utter_data_theft_best_practices:
+    - text: "Encrypt sensitive data, use secure networks, limit access to data based on necessity, regularly update security protocols, and educate yourself about potential threats."
+
+  utter_device_security_mobile:
+    - text: "Install security updates promptly, use strong passwords or biometric authentication, enable remote wipe features, and avoid downloading apps from unknown sources."
+
+  utter_device_security_settings:
+    - text: "Enable firewalls, use strong encryption methods, regularly update firmware, disable unused services, and set up security monitoring."
+
+  utter_device_security_update:
+    - text: "Go to your device’s settings menu, check for available updates, and follow the prompts to install them. Refer to the user manual or manufacturer’s website for detailed instructions."
+
+  utter_network_security_wifi:
+    - text: "Change the default router password, enable WPA3 encryption, hide your SSID, use a strong network password, and regularly update your router’s firmware."
+
+  utter_network_security_compromised:
+    - text: "Slow internet speeds, unexpected device behavior, unfamiliar devices connected to your network, and frequent disconnections can be signs of a compromised network."
+
+  utter_network_security_unauthorized_access:
+    - text: "Use strong, unique passwords, enable MAC address filtering, regularly update your router firmware, and disable remote management features."
+
+  utter_ransomware_protect:
+    - text: "Regularly back up your data, keep software updated, use robust security software, avoid opening suspicious emails or links, and educate yourself about ransomware tactics."
+
+  utter_ransomware_infected:
+    - text: "Disconnect from the internet, do not pay the ransom, report the attack to authorities, and seek professional help to remove the ransomware and recover data from backups."
+
+  utter_ransomware_backup:
+    - text: "Use automated backup solutions, store backups in multiple locations (including offline and cloud storage), and regularly verify that backups are complete and functional."
+
+  utter_mitm_detect:
+    - text: "Signs include unexpected SSL certificate warnings, unencrypted traffic, slow internet performance, and unexpected redirects or pop-ups during browsing."
+
+  utter_mitm_prevent:
+    - text: "Use HTTPS connections, avoid public Wi-Fi for sensitive transactions, employ VPNs, use strong encryption, and ensure your software is up-to-date."
+
+  utter_mitm_secure:
+    - text: "Use end-to-end encrypted communication tools, enable two-factor authentication, verify the identity of communication partners, and use security-focused browsers and email services."
+
+  utter_iot_secure_devices:
+    - text: "Change default passwords, keep firmware updated, segment IoT devices on a separate network, disable unnecessary features, and monitor network traffic."
+
+  utter_iot_best_practices:
+    - text: "Regularly update devices, use strong and unique passwords, secure network configurations, limit device permissions, and employ network security tools like firewalls."
+
+  utter_iot_monitor_manage:
+    - text: "Use a dedicated IoT security platform, regularly check device logs, perform vulnerability assessments, and set up alerts for unusual activity."
+
+  utter_protect_communications:
+    - text: "Use encrypted communication channels, avoid discussing sensitive information over unsecured lines, and employ secure communication tools."
+
+  utter_prevent_espionage:
+    - text: "Implement strict access controls, conduct regular security audits, use encryption for sensitive data, and educate employees about espionage tactics."
+
+  utter_secure_information:
+    - text: "Use end-to-end encryption, ensure secure protocols (e.g., TLS/SSL) are in place, and verify the integrity of the communication channels."
+
+  utter_protect_network:
+    - text: "Implement DDoS mitigation services, use rate limiting, deploy web application firewalls, and establish redundancy in your network infrastructure."
+
+  utter_experiencing_ddos:
+    - text: "Contact your ISP or DDoS mitigation provider, activate any existing DDoS protection measures, and communicate with users about the issue."
+
+  utter_mitigating_ddos:
+    - text: "Use cloud-based DDoS protection, regularly update and patch systems, employ network security monitoring, and create an incident response plan."
+
+  utter_regulations:
+    - text: "Regulations vary by region but generally include requirements for data protection, network security, and incident reporting. Key examples include GDPR in Europe and CCPA in California."
+
+  utter_gdpr_compliance:
+    - text: "Implement data protection measures, conduct regular audits, appoint a Data Protection Officer (DPO), and ensure transparent data handling practices."
+
+  utter_penalties:
+    - text: "Penalties can include hefty fines, legal action, and reputational damage. For example, GDPR violations can result in fines up to 4% of annual global turnover or €20 million, whichever is higher."
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

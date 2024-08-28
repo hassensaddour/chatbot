@@ -1,0 +1,212 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+
+
+- story: Respond to phishing recognition question
+  steps:
+    - intent: ask_phishing_1
+#     user: "How can I recognize a phishing email?"
+    - action: utter_phishing_recognition
+
+- story: Respond to phishing suspicion question
+  steps:
+    - intent: ask_phishing_2
+#     user: "What should I do if I suspect an email is a phishing attempt?"
+    - action: utter_phishing_suspicion
+
+- story: Respond to phishing report question
+  steps:
+    - intent: ask_phishing_3
+#     user: "How can I report phishing emails?"
+    - action: utter_phishing_report
+
+- story: Respond to data theft protection question
+  steps:
+    - intent: ask_data_theft_1
+#      user: "How can I protect my personal data from theft?"
+    - action: utter_data_theft_protection
+
+- story: Respond to data theft response question
+  steps:
+    - intent: ask_data_theft_2
+#     user: "What should I do if my data has been stolen?"
+    - action: utter_data_theft_response
+
+- story: Respond to data theft best practices question
+  steps:
+    - intent: ask_data_theft_3
+#      user: "What are the best practices for securing sensitive information?"
+    - action: utter_data_theft_best_practices
+
+- story: Respond to mobile device security question
+  steps:
+    - intent: ask_device_security_1
+#     user: "How can I secure my mobile device against cyber threats?"
+    - action: utter_device_security_mobile
+
+- story: Respond to telecom device security settings question
+  steps:
+    - intent: ask_device_security_2
+#     user: "What are the best security settings for my telecom devices?"
+    - action: utter_device_security_settings
+
+- story: Respond to device security update question
+  steps:
+    - intent: ask_device_security_3
+#     user: "How can I update my device’s security settings?"
+    - action: utter_device_security_update
+
+- story: Respond to home Wi-Fi security question
+  steps:
+    - intent: ask_network_security_1
+#     user: "How can I secure my home Wi-Fi network?"
+    - action: utter_network_security_wifi
+
+- story: Respond to compromised network question
+  steps:
+    - intent: ask_network_security_2
+#     user: "What are the signs of a compromised network?"
+    - action: utter_network_security_compromised
+
+- story: Respond to unauthorized network access question
+  steps:
+    - intent: ask_network_security_3
+#     user: "How can I prevent unauthorized access to my network?"
+    - action: utter_network_security_unauthorized_access
+
+- story: Respond to ransomware protection question
+  steps:
+    - intent: ask_ransomware_1
+#     user: "How can I protect my data from ransomware attacks?"
+    - action: utter_ransomware_protect
+
+- story: Respond to ransomware infection question
+  steps:
+    - intent: ask_ransomware_2
+#     user: "What should I do if my device is infected with ransomware?"
+    - action: utter_ransomware_infected
+
+- story: Respond to ransomware backup question
+  steps:
+    - intent: ask_ransomware_3
+#     user: "How can I backup my data to prevent ransomware loss?"
+    - action: utter_ransomware_backup
+
+- story: Respond to MitM detection question
+  steps:
+    - intent: ask_mitm_attacks_1
+#     user: "How can I detect if I am a victim of a MitM attack?"
+    - action: utter_mitm_detect
+
+- story: Respond to MitM prevention question
+  steps:
+    - intent: ask_mitm_attacks_2
+#     user: "What are the steps to prevent MitM attacks?"
+    - action: utter_mitm_prevent
+
+- story: Respond to MitM secure communications question
+  steps:
+    - intent: ask_mitm_attacks_3
+#     user: "How can I secure my communications against MitM attacks?"
+    - action: utter_mitm_secure
+
+- story: Respond to IoT device security question
+  steps:
+    - intent: ask_iot_security_1
+#     user: "How can I secure my IoT devices from cyber threats?"
+    - action: utter_iot_secure_devices
+
+- story: Respond to IoT best practices question
+  steps:
+    - intent: ask_iot_security_2
+#     user: "What are the best practices for IoT device security?"
+    - action: utter_iot_best_practices
+
+- story: Respond to IoT monitoring question
+  steps:
+    - intent: ask_iot_security_3
+#     user: "How can I monitor and manage the security of my IoT devices?"
+    - action: utter_iot_monitor_manage
+
+- story: Respond to eavesdropping protection question
+  steps:
+    - intent: ask_espionage_eavesdropping_1
+#     user: "How can I protect my communications from eavesdropping?"
+    - action: utter_protect_communications
+
+- story: Respond to industrial espionage prevention question
+  steps:
+    - intent: ask_espionage_eavesdropping_2
+#     user: "What steps can I take to prevent industrial espionage?"
+    - action: utter_prevent_espionage
+
+- story: Respond to securing sensitive information question
+  steps:
+    - intent: ask_espionage_eavesdropping_3
+#     user: "How can I secure sensitive information during transmission?"
+    - action: utter_secure_information
+
+- story: Respond to DDoS protection question
+  steps:
+    - intent: ask_ddos_attacks_1
+#     user: "How can I protect my network from DDoS attacks?"
+    - action: utter_protect_network
+
+- story: Respond to experiencing DDoS attack question
+  steps:
+    - intent: ask_ddos_attacks_2
+#     user: "What should I do if I am experiencing a DDoS attack?"
+    - action: utter_experiencing_ddos
+
+- story: Respond to mitigating DDoS threats question
+  steps:
+    - intent: ask_ddos_attacks_3
+#      user: "What are the best practices for mitigating DDoS threats?"
+    - action: utter_mitigating_ddos
+
+- story: Respond to telecom security regulations question
+  steps:
+    - intent: ask_compliance_1
+#      user: "What are the current regulations regarding telecom security?"
+    - action: utter_regulations
+
+- story: Respond to GDPR compliance question
+  steps:
+    - intent: ask_compliance_2
+#      user: "How can I ensure my practices comply with GDPR?"
+    - action: utter_gdpr_compliance
+
+- story: Respond to penalties for non-compliance question
+  steps:
+    - intent: ask_compliance_3
+#      user: "What are the penalties for non-compliance with telecom security regulations?"
+    - action: utter_penalties
